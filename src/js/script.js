@@ -61,7 +61,7 @@ function ValidateForm() {
         alert("O campo e-mail esta incorreto");
     } 
     else if(senhaValida == false && emailValido == true){
-        alert("Verifique o campo senha");
+        alert("O campo senha esta incorreto");
     }
 }
 
