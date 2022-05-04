@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RePrograma PB</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/footer.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/page.css">
+    <link rel="stylesheet" href="src/css/main.css">
+    <link rel="stylesheet" href="src/css/header.css">
+    <link rel="stylesheet" href="src/css/formulario.css">
+</head>
+
+<body>
+
+    <!-- Esse é o cabeçalho (header) principal -->
+    <header>
+        <a href="#">
+            <figure>
+                <img src="src/imagens/logo-reprograma.jpg" alt="Logo RePrograma" />
+            </figure>
+        </a>
+
+        <nav>
+            <ul>
+                <li><a href="#">Sobre o RePrograma</a></li>
+                <li><a href="#">Vagas</a></li>
+                <li><a href="#">Edições anteriores</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Esse é o conteúdo principal da nossa página -->
+    <main>
+
+        <section class="infos-programa">
+            <!-- Artigo com informações sobre o programa -->
+            <article>
+                <h1>O que é o RePrograma?</h1>
+                <p>O ReProgama PB é o estágio em Tecnologia do Paraná Banco exclusivo para mulheres.</p>
+                <h2>Para quem é feito esse programa?</h2>
+                <p>Procuramos pessoas que se identifiquem com a nossa cultura e se já não estão apaixonadas pelo
+                    sorriso, que estejam dispostas a sonhar esse sonho com a gente.
+                </p>
+            </article>
+
+            <!-- Banner lateral, por isso vamos colocá-lo dentro de uma tag <aside>.
+         O contéudo do elemento aside pode ser aninhado dentro do conteúdo do elemento main -->
+            <aside>
+                <figure>
+                    <img src="src/imagens/banner.jpg" alt="Banner Reprograma com uma mulher sorrindo" />
+                </figure>
+            </aside>
+        </section>
+
+        <section class="cadastro">
+            <h3>Fique por dentro das novidades</h3>
+
+            <!-- Formulário de cadastro -->
+            <form id="form" onsubmit="ValidateForm(event);">
+                <fieldset>
+                    <legend>
+                        Continue para acessar informações do RePrograma e não perder as próximas
+                        edições.
+                    </legend>
+                     <!-- A tag <label> serve para colocar um texto junto do campo do form
+                    O for indica sobre qual elemento input é o texto na tela -->
+                    <label for="email">
+                        <span>E-mail <abbr title="Obrigatório">*</abbr></span>
+                         <!-- O input coleta a entrada de dado do usuário -->
+                        <input type="email" id="email">
+                    </label>
+                     <!-- Cada campo fica dentro de uma label -->
+                    <label for="passwd">
+                        <span>Senha <abbr title="Obrigatório">*</abbr></span>
+                        <input type="password" id="passwd">
+                    </label>
+                    <button type="submit">Continuar</button>
+                </fieldset>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Este é o rodapé principal -->
+    <footer>
+        <p>© Copyright Paraná Banco 2022</p>
+    </footer>
+
+    <script src="src/js/script.js"></script>
+</body>
+
+</html>

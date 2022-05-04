@@ -1,0 +1,16 @@
+/* Este trecho de código reseta o estilo nativo dos navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Este trecho define a fonte a ser utilizada na página */
+html {    
+    font: 18px Roboto, Arial, Arial, Helvetica, sans-serif;
+}
+
+/* Este trecho define as variáveis globais que você pode acessar em outras partes do projeto */
+:root {
+    --purple: #7B61FF;
+}
